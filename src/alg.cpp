@@ -1,11 +1,4 @@
-int findFirstGreaterThan(int *arr, int size, int value) {
-    for (int i = 0; i < size; ++i) {
-        if (arr[i] > value) {
-            return i;
-        }
-    }
-    return 0;
-}
+
 int binarySearch(int *arr, int size, int value) {
     int found = 0;
     int first = 0;
