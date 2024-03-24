@@ -54,9 +54,13 @@ int cbinsearch(int* arr, int size, int value) {
     return count;
 }
 int countPairs3(int* arr, int len, int value) {
-    int count = 0;
+   int count = 0;
     for (int i = 0; i < len; i++) {
-        count += cbinsearch(&arr[i + 1], len - i - 1, value - arr[i]);
+        int secondValue = value - arr[i];
+        int index = binarySearch(arr, i + 1, len - 1, secondValue);
+        if (index != -1) {
+            count++;
+        }
     }
     return count;
 }
