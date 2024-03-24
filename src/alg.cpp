@@ -6,7 +6,6 @@ int findFirstGreaterThan(int *arr, int size, int value) {
     }
     return 0;
 }
-
 int binarySearch(int *arr, int size, int value) {
     int found = 0;
     int first = 0;
@@ -35,7 +34,6 @@ int binarySearch(int *arr, int size, int value) {
     }
     return 0;
 }
-
 int countPairs1(int *arr, int len, int value) {
     int result = 0;
     for (int i = 0; i < len; ++i) {
@@ -60,7 +58,6 @@ int countPairs2(int *arr, int len, int value) {
     }
     return result;
 }
-
 int countPairs3(int *arr, int len, int value) {
     int result = 0;
     for (int i = 0; i < len; ++i) {
